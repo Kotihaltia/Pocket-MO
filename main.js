@@ -4,24 +4,24 @@ const secondRow = 'собака друг человека';
 
 function getRow(firstRow, secondRow) {
 
-    let firstRowL = 0;
-    let secondRowL = 0;
+    let firstRowLength = 0;
+    let secondRowLength = 0;
 
     for (let i = 0; i < firstRow.length; i++) {
 
         if (firstRow.charAt(i) === 'а') {
-            firstRowL++;
+            firstRowLength++;
         }
     }
 
     for (let i = 0; i < secondRow.length; i++) {
 
         if (secondRow.charAt(i) === 'а') {
-            secondRowL++;
+            secondRowLength++;
         }
     }
 
-    if (firstRowL >= secondRowL) {
+    if (firstRowLength >= secondRowLength) {
         return firstRow;
     }
     else {
