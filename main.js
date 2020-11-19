@@ -35,45 +35,21 @@ function init() {
     renderProgressbarHP(enemy);
 }
 
-<<<<<<< Updated upstream
-    let firstRowL = 0;
-    let secondRowL = 0;
-=======
 function renderHP(person) {
     renderHPLife(person);
     renderProgressbarHP(person);
 }
->>>>>>> Stashed changes
 
 function renderHPLife(person) {
     person.elHP.innerText = person.damageHP + ' / ' + person.defaultHP;
 }
 
-<<<<<<< Updated upstream
-        if (firstRow.charAt(i) === 'а') {
-            firstRowL++;
-        }
-    }
-=======
 function renderProgressbarHP(person) {
     person.elProgressbar.style.width = person.damageHP + '%';
 }
->>>>>>> Stashed changes
 
 function changeHP(count, person) {
 
-<<<<<<< Updated upstream
-        if (secondRow.charAt(i) === 'а') {
-            secondRowL++;
-        }
-    }
-
-    if (firstRowL >= secondRowL) {
-        return firstRow;
-    }
-    else {
-        return secondRow;
-=======
     if (person.damageHP < count) {
         person.damageHP === 0;
         alert('В зале есть доктор? ' + person.name + ' плохо!');
@@ -82,7 +58,6 @@ function changeHP(count, person) {
 
     } else {
         person.damageHP -= count;
->>>>>>> Stashed changes
     }
 
     renderHP(person);
